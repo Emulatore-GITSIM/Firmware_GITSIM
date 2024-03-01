@@ -1,0 +1,23 @@
+<map id="gestione_comunicazione.h" name="gestione_comunicazione.h">
+<area shape="rect" id="Node000001" title="Header file per funzioni riguardanti la lettura dei telegrammi e la loro manipolazione." alt="" coords="187,5,363,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,80,86,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="236,35,101,77,100,72,234,30"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="109,80,214,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="257,35,196,74,193,69,254,30"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="238,80,312,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="278,33,278,64,272,64,272,33"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="336,80,414,107"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="294,30,347,68,343,73,291,35"/>
+<area shape="rect" id="Node000006" href="$emulazione__git_8h.html" title="Header file per funzioni riguardanti i GIT." alt="" coords="438,80,557,107"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="314,30,445,72,443,77,313,35"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="294,155,357,181"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="469,110,371,151,368,146,467,105"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="381,155,441,181"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="484,109,439,147,436,143,481,105"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="465,155,530,181"/>
+<area shape="poly" id="edge8_Node000006_Node000009" title=" " alt="" coords="500,107,500,139,495,139,495,107"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="554,155,617,181"/>
+<area shape="poly" id="edge9_Node000006_Node000010" title=" " alt="" coords="515,105,560,143,557,147,511,109"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="641,155,709,181"/>
+<area shape="poly" id="edge10_Node000006_Node000011" title=" " alt="" coords="529,105,631,146,629,151,527,110"/>
+</map>

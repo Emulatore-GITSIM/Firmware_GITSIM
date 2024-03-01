@@ -1,0 +1,454 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="it">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Firmware GITSIM: Riferimenti per il file emulazione_git.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="output-onlinepngtools.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">Firmware GITSIM<span id="projectnumber">&#160;3.0</span>
+   </div>
+   <div id="projectbrief">Documentazione tecnica</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generato da Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Cerca');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('emulazione__git_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Caricamento in corso...</div>
+<div class="SRStatus" id="Searching">Ricerca in corso...</div>
+<div class="SRStatus" id="NoMatches">Nessun risultato</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Strutture dati</a> &#124;
+<a href="#define-members">Definizioni</a> &#124;
+<a href="#typedef-members">Ridefinizioni di tipo (typedef)</a> &#124;
+<a href="#func-members">Funzioni</a> &#124;
+<a href="#var-members">Variabili</a>  </div>
+  <div class="headertitle"><div class="title">Riferimenti per il file emulazione_git.h</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Header file per funzioni riguardanti i <a class="el" href="struct_g_i_t.html" title="Struttura contenente le proprietà fisiche (e non) di un GIT, in maniera da identificare univocamente ...">GIT</a>.  
+<a href="#details">Continua...</a></p>
+<div class="textblock"><code>#include &quot;xil_io.h&quot;</code><br />
+<code>#include &quot;stdio.h&quot;</code><br />
+<code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &quot;xgpio.h&quot;</code><br />
+<code>#include &lt;assert.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Grafo delle dipendenze di inclusione per emulazione_git.h:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="emulazione__git_8h__incl.svg" width="426" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+<p><a href="emulazione__git_8h_source.html">Vai al codice sorgente di questo file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Strutture dati</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_g_i_t.html">GIT</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struttura contenente le proprietà fisiche (e non) di un <a class="el" href="struct_g_i_t.html" title="Struttura contenente le proprietà fisiche (e non) di un GIT, in maniera da identificare univocamente ...">GIT</a>, in maniera da identificare univocamente la forma d'onda corrispondente.  <a href="struct_g_i_t.html#details">Continua...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Definizioni</h2></td></tr>
+<tr class="memitem:a5711cd8c640069d4222d24c7832b35d0" id="r_a5711cd8c640069d4222d24c7832b35d0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5711cd8c640069d4222d24c7832b35d0">T_SAMPLE</a>&#160;&#160;&#160;0.000004</td></tr>
+<tr class="separator:a5711cd8c640069d4222d24c7832b35d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96ee7a4d2aee8a097cf25167be12018f" id="r_a96ee7a4d2aee8a097cf25167be12018f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a96ee7a4d2aee8a097cf25167be12018f">PI_GRECO</a>&#160;&#160;&#160;3.14159265358979323846</td></tr>
+<tr class="separator:a96ee7a4d2aee8a097cf25167be12018f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a271856af8b8b2cadea103f02bd5b668f" id="r_a271856af8b8b2cadea103f02bd5b668f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a271856af8b8b2cadea103f02bd5b668f">VELOCITA_MAX</a>&#160;&#160;&#160;700/3.6</td></tr>
+<tr class="separator:a271856af8b8b2cadea103f02bd5b668f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Ridefinizioni di tipo (typedef)</h2></td></tr>
+<tr class="memitem:a4611b605e45ab401f02cab15c5e38715" id="r_a4611b605e45ab401f02cab15c5e38715"><td class="memItemLeft" align="right" valign="top">typedef float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4611b605e45ab401f02cab15c5e38715">float32_t</a></td></tr>
+<tr class="separator:a4611b605e45ab401f02cab15c5e38715"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf48e6de81b13463344ee4ebcf05d8b6" id="r_abf48e6de81b13463344ee4ebcf05d8b6"><td class="memItemLeft" align="right" valign="top">typedef long double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abf48e6de81b13463344ee4ebcf05d8b6">float64_t</a></td></tr>
+<tr class="separator:abf48e6de81b13463344ee4ebcf05d8b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funzioni</h2></td></tr>
+<tr class="memitem:ab0df4a05499a0d0ff2818a433f53e1a9" id="r_ab0df4a05499a0d0ff2818a433f53e1a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab0df4a05499a0d0ff2818a433f53e1a9">Inizializza_GIT</a> (<a class="el" href="struct_g_i_t.html">GIT</a> *var_git)</td></tr>
+<tr class="memdesc:ab0df4a05499a0d0ff2818a433f53e1a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">La funzione inizializza tutti i campi di una struttura <a class="el" href="struct_g_i_t.html" title="Struttura contenente le proprietà fisiche (e non) di un GIT, in maniera da identificare univocamente ...">GIT</a>.  <br /></td></tr>
+<tr class="separator:ab0df4a05499a0d0ff2818a433f53e1a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04a2dc794836e9ecb55f2ea9f1857cce" id="r_a04a2dc794836e9ecb55f2ea9f1857cce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a04a2dc794836e9ecb55f2ea9f1857cce">Aggiorna_spazio_e_vel</a> (<a class="el" href="struct_g_i_t.html">GIT</a> *var_git)</td></tr>
+<tr class="memdesc:a04a2dc794836e9ecb55f2ea9f1857cce"><td class="mdescLeft">&#160;</td><td class="mdescRight">La funzione aggiorna le principali variabili cinematiche del <a class="el" href="struct_g_i_t.html" title="Struttura contenente le proprietà fisiche (e non) di un GIT, in maniera da identificare univocamente ...">GIT</a>.  <br /></td></tr>
+<tr class="separator:a04a2dc794836e9ecb55f2ea9f1857cce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b152e22dd198c2e62bafb1c5562f12b" id="r_a2b152e22dd198c2e62bafb1c5562f12b"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2b152e22dd198c2e62bafb1c5562f12b">Emula_GIT_wGPIO</a> (<a class="el" href="struct_g_i_t.html">GIT</a> *var_git, XGpio GPIO_CH_A, XGpio GPIO_CH_B)</td></tr>
+<tr class="memdesc:a2b152e22dd198c2e62bafb1c5562f12b"><td class="mdescLeft">&#160;</td><td class="mdescRight">La funzione emula, sulle porte GPIO indicate, una variabile <a class="el" href="struct_g_i_t.html" title="Struttura contenente le proprietà fisiche (e non) di un GIT, in maniera da identificare univocamente ...">GIT</a> sulla base dei suoi campi (stati)  <br /></td></tr>
+<tr class="separator:a2b152e22dd198c2e62bafb1c5562f12b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variabili</h2></td></tr>
+<tr class="memitem:a96d75e2c9c47d6964da0ba685808f433" id="r_a96d75e2c9c47d6964da0ba685808f433"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_g_i_t.html">GIT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a96d75e2c9c47d6964da0ba685808f433">git1</a></td></tr>
+<tr class="separator:a96d75e2c9c47d6964da0ba685808f433"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab404a5e4b3e9c6e5d547cfd8c53db4a" id="r_aab404a5e4b3e9c6e5d547cfd8c53db4a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_g_i_t.html">GIT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aab404a5e4b3e9c6e5d547cfd8c53db4a">git2</a></td></tr>
+<tr class="separator:aab404a5e4b3e9c6e5d547cfd8c53db4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrizione dettagliata</h2>
+<div class="textblock"><p>Header file per funzioni riguardanti i <a class="el" href="struct_g_i_t.html" title="Struttura contenente le proprietà fisiche (e non) di un GIT, in maniera da identificare univocamente ...">GIT</a>. </p>
+<dl class="section author"><dt>Autore</dt><dd>Saimon Collaku  </dd></dl>
+
+<p class="definition">Definizione nel file <a class="el" href="emulazione__git_8h_source.html">emulazione_git.h</a>.</p>
+</div><h2 class="groupheader">Documentazione delle definizioni</h2>
+<a id="a96ee7a4d2aee8a097cf25167be12018f" name="a96ee7a4d2aee8a097cf25167be12018f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96ee7a4d2aee8a097cf25167be12018f">&#9670;&#160;</a></span>PI_GRECO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PI_GRECO&#160;&#160;&#160;3.14159265358979323846</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Costante pigreco </p>
+
+<p class="definition">Definizione alla linea <a class="el" href="emulazione__git_8h_source.html#l00028">28</a> del file <a class="el" href="emulazione__git_8h_source.html">emulazione_git.h</a>.</p>
+
+</div>
+</div>
+<a id="a5711cd8c640069d4222d24c7832b35d0" name="a5711cd8c640069d4222d24c7832b35d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5711cd8c640069d4222d24c7832b35d0">&#9670;&#160;</a></span>T_SAMPLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define T_SAMPLE&#160;&#160;&#160;0.000004</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Tempo di aggiornamento dello spazio </p>
+
+<p class="definition">Definizione alla linea <a class="el" href="emulazione__git_8h_source.html#l00025">25</a> del file <a class="el" href="emulazione__git_8h_source.html">emulazione_git.h</a>.</p>
+
+</div>
+</div>
+<a id="a271856af8b8b2cadea103f02bd5b668f" name="a271856af8b8b2cadea103f02bd5b668f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a271856af8b8b2cadea103f02bd5b668f">&#9670;&#160;</a></span>VELOCITA_MAX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define VELOCITA_MAX&#160;&#160;&#160;700/3.6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Velocità massima lineare emulabile dal <a class="el" href="struct_g_i_t.html" title="Struttura contenente le proprietà fisiche (e non) di un GIT, in maniera da identificare univocamente ...">GIT</a>, in m/s </p>
+
+<p class="definition">Definizione alla linea <a class="el" href="emulazione__git_8h_source.html#l00030">30</a> del file <a class="el" href="emulazione__git_8h_source.html">emulazione_git.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentazione delle ridefinizioni di tipo (typedef)</h2>
+<a id="a4611b605e45ab401f02cab15c5e38715" name="a4611b605e45ab401f02cab15c5e38715"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4611b605e45ab401f02cab15c5e38715">&#9670;&#160;</a></span>float32_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef float <a class="el" href="#a4611b605e45ab401f02cab15c5e38715">float32_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Definizione di un tipo di dato a virgola mobile per seguire le regole del MISRA, definizione di float a 32 bit </p>
+
+<p class="definition">Definizione alla linea <a class="el" href="emulazione__git_8h_source.html#l00035">35</a> del file <a class="el" href="emulazione__git_8h_source.html">emulazione_git.h</a>.</p>
+
+</div>
+</div>
+<a id="abf48e6de81b13463344ee4ebcf05d8b6" name="abf48e6de81b13463344ee4ebcf05d8b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf48e6de81b13463344ee4ebcf05d8b6">&#9670;&#160;</a></span>float64_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef long double <a class="el" href="#abf48e6de81b13463344ee4ebcf05d8b6">float64_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Definizione di un tipo di dato a virgola mobile per seguire le regole del MISRA, definizione di float a 64 bit </p>
+
+<p class="definition">Definizione alla linea <a class="el" href="emulazione__git_8h_source.html#l00038">38</a> del file <a class="el" href="emulazione__git_8h_source.html">emulazione_git.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentazione delle funzioni</h2>
+<a id="a04a2dc794836e9ecb55f2ea9f1857cce" name="a04a2dc794836e9ecb55f2ea9f1857cce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04a2dc794836e9ecb55f2ea9f1857cce">&#9670;&#160;</a></span>Aggiorna_spazio_e_vel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Aggiorna_spazio_e_vel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_g_i_t.html">GIT</a> *</td>          <td class="paramname"><span class="paramname"><em>var_git</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>La funzione aggiorna le principali variabili cinematiche del <a class="el" href="struct_g_i_t.html" title="Struttura contenente le proprietà fisiche (e non) di un GIT, in maniera da identificare univocamente ...">GIT</a>. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">var_git</td><td>Puntatore a struttura <a class="el" href="struct_g_i_t.html" title="Struttura contenente le proprietà fisiche (e non) di un GIT, in maniera da identificare univocamente ...">GIT</a> di cui si vuole fare l'update dello spazio e della velocità, al tempo di campionamento \( k \) presente</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>La funzione esegue queste azioni (in ordine):</p><ul>
+<li>esegue una integrazione numerica di tipo <b>Eulero avanti</b> sull'accelerazione: \(  v(t)= 
+         \int_{t-T}^{t} a(t) \,dt \approx a(k) \cdot 
+         \Delta t + v(k-1)\) <br  />
+</li>
+<li>satura la velocità se va oltre il valore di 700 km/h <br  />
+</li>
+<li>integra la velocità nella stessa maniera fatta con l'accelerazione</li>
+<li>fa una conversione, da sfasamento in gradi, in sfasamento di spazio e la applica allo spazio del sensore/canale B <br  />
+</li>
+<li>fa ritornare i campi <em>pos_A</em> e <em>pos_B</em> dentro il range di definizione \( (-2 \cdot passo, 2 \cdot passo) \) qualora uno dei due ci esca </li>
+</ul>
+
+<p class="definition">Definizione alla linea <a class="el" href="emulazione__git_8c_source.html#l00054">54</a> del file <a class="el" href="emulazione__git_8c_source.html">emulazione_git.c</a>.</p>
+
+</div>
+</div>
+<a id="a2b152e22dd198c2e62bafb1c5562f12b" name="a2b152e22dd198c2e62bafb1c5562f12b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b152e22dd198c2e62bafb1c5562f12b">&#9670;&#160;</a></span>Emula_GIT_wGPIO()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t Emula_GIT_wGPIO </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_g_i_t.html">GIT</a> *</td>          <td class="paramname"><span class="paramname"><em>var_git</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">XGpio</td>          <td class="paramname"><span class="paramname"><em>GPIO_CH_A</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">XGpio</td>          <td class="paramname"><span class="paramname"><em>GPIO_CH_B</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>La funzione emula, sulle porte GPIO indicate, una variabile <a class="el" href="struct_g_i_t.html" title="Struttura contenente le proprietà fisiche (e non) di un GIT, in maniera da identificare univocamente ...">GIT</a> sulla base dei suoi campi (stati) </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">var_git</td><td>Puntatore a struttura <a class="el" href="struct_g_i_t.html" title="Struttura contenente le proprietà fisiche (e non) di un GIT, in maniera da identificare univocamente ...">GIT</a> di cui si vuole fare l'update dello spazio e della velocità, al tempo di campionamento \( k \) presente</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">GPIO_CH_A</td><td>Indirizzo della GPIO da cui si vuole emulare il canale A del <a class="el" href="struct_g_i_t.html" title="Struttura contenente le proprietà fisiche (e non) di un GIT, in maniera da identificare univocamente ...">GIT</a></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">GPIO_CH_B</td><td>Indirizzo della GPIO da cui si vuole emulare il canale B del <a class="el" href="struct_g_i_t.html" title="Struttura contenente le proprietà fisiche (e non) di un GIT, in maniera da identificare univocamente ...">GIT</a></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Restituisce</dt><dd>Numero intero che riporta lo stato delle uscite dei canali emulati</dd></dl>
+<dl class="retval"><dt>Valori di ritorno</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Il <a class="el" href="struct_g_i_t.html" title="Struttura contenente le proprietà fisiche (e non) di un GIT, in maniera da identificare univocamente ...">GIT</a> emulato ha il canale A basso (= 0 V) e il canale B basso (= 0 V) </td></tr>
+    <tr><td class="paramname">1</td><td>Il <a class="el" href="struct_g_i_t.html" title="Struttura contenente le proprietà fisiche (e non) di un GIT, in maniera da identificare univocamente ...">GIT</a> emulato ha il canale A basso (= 0 V) e il canale B alto (= 3.3 V) </td></tr>
+    <tr><td class="paramname">2</td><td>Il <a class="el" href="struct_g_i_t.html" title="Struttura contenente le proprietà fisiche (e non) di un GIT, in maniera da identificare univocamente ...">GIT</a> emulato ha il canale A alto (= 3.3 V) e il canale B alto (= 3.3 V) </td></tr>
+    <tr><td class="paramname">3</td><td>Il <a class="el" href="struct_g_i_t.html" title="Struttura contenente le proprietà fisiche (e non) di un GIT, in maniera da identificare univocamente ...">GIT</a> emulato ha il canale A alto (= 3.3 V) e il canale B basso (= 0 V) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definizione alla linea <a class="el" href="emulazione__git_8c_source.html#l00127">127</a> del file <a class="el" href="emulazione__git_8c_source.html">emulazione_git.c</a>.</p>
+
+</div>
+</div>
+<a id="ab0df4a05499a0d0ff2818a433f53e1a9" name="ab0df4a05499a0d0ff2818a433f53e1a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0df4a05499a0d0ff2818a433f53e1a9">&#9670;&#160;</a></span>Inizializza_GIT()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Inizializza_GIT </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_g_i_t.html">GIT</a> *</td>          <td class="paramname"><span class="paramname"><em>var_git</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>La funzione inizializza tutti i campi di una struttura <a class="el" href="struct_g_i_t.html" title="Struttura contenente le proprietà fisiche (e non) di un GIT, in maniera da identificare univocamente ...">GIT</a>. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">var_git</td><td>Puntatore a struttura <a class="el" href="struct_g_i_t.html" title="Struttura contenente le proprietà fisiche (e non) di un GIT, in maniera da identificare univocamente ...">GIT</a> che si vuole inizializzare</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Nota</dt><dd>La funzione viene attualmente utilizzata solo nel main, per l'inizializzazione prima del loop</dd></dl>
+<p>La funzione riporta ai valori di default tutti campi di una struttura <a class="el" href="struct_g_i_t.html" title="Struttura contenente le proprietà fisiche (e non) di un GIT, in maniera da identificare univocamente ...">GIT</a>, in particolare:</p><ul>
+<li>Riporta a zero i campi di accelerazione e spazio (di riferimento) <br  />
+</li>
+<li>Porta a 30 m/s la velocità del <a class="el" href="struct_g_i_t.html" title="Struttura contenente le proprietà fisiche (e non) di un GIT, in maniera da identificare univocamente ...">GIT</a>, intesa come valore di default <br  />
+</li>
+<li>Riporta le condizioni nominali sulle forme d'onda (duty = 50% e fase = 90°) <br  />
+</li>
+<li>Impone un diametro di ruota pari a 1 metro <br  />
+</li>
+<li>Impone una risoluzione del disco del <a class="el" href="struct_g_i_t.html" title="Struttura contenente le proprietà fisiche (e non) di un GIT, in maniera da identificare univocamente ...">GIT</a> a 128 ppr <br  />
+</li>
+<li>Impone il passo a 6.13 mm (= \( \frac{\pi}{4 \cdot 128}) \) <br  />
+</li>
+</ul>
+
+<p class="definition">Definizione alla linea <a class="el" href="emulazione__git_8c_source.html#l00021">21</a> del file <a class="el" href="emulazione__git_8c_source.html">emulazione_git.c</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentazione delle variabili</h2>
+<a id="a96d75e2c9c47d6964da0ba685808f433" name="a96d75e2c9c47d6964da0ba685808f433"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96d75e2c9c47d6964da0ba685808f433">&#9670;&#160;</a></span>git1</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_g_i_t.html">GIT</a> git1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Variabile di tipo <a class="el" href="struct_g_i_t.html" title="Struttura contenente le proprietà fisiche (e non) di un GIT, in maniera da identificare univocamente ...">GIT</a>, che contiene le proprietà del 1° sensore emulato</p>
+<div class="fragment"></div><!-- fragment --> 
+<p class="definition">Definizione alla linea <a class="el" href="gestione__periferiche_8c_source.html#l00042">42</a> del file <a class="el" href="gestione__periferiche_8c_source.html">gestione_periferiche.c</a>.</p>
+
+</div>
+</div>
+<a id="aab404a5e4b3e9c6e5d547cfd8c53db4a" name="aab404a5e4b3e9c6e5d547cfd8c53db4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab404a5e4b3e9c6e5d547cfd8c53db4a">&#9670;&#160;</a></span>git2</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_g_i_t.html">GIT</a> git2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Variabile di tipo <a class="el" href="struct_g_i_t.html" title="Struttura contenente le proprietà fisiche (e non) di un GIT, in maniera da identificare univocamente ...">GIT</a>, che contiene le proprietà del 2° sensore emulato </p>
+
+<p class="definition">Definizione alla linea <a class="el" href="gestione__periferiche_8c_source.html#l00042">42</a> del file <a class="el" href="gestione__periferiche_8c_source.html">gestione_periferiche.c</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="emulazione__git_8h.html">emulazione_git.h</a></li>
+    <li class="footer">Generato da <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

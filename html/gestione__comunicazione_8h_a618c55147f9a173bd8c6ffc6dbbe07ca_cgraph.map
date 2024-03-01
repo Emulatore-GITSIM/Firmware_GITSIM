@@ -1,0 +1,5 @@
+<map id="Lettura_telegramma" name="Lettura_telegramma">
+<area shape="rect" id="Node000001" title="La funzione prende in ingresso un puntatore a fifo, riempendo una cella di esso con un dato ricevuto ..." alt="" coords="5,5,142,32"/>
+<area shape="rect" id="Node000002" href="$gestione__comunicazione_8c.html#ab1fad6242e5cdf0e08d781f8ed62d9c7" title="La funzione prende in ingresso una stringa e la converte in un formato float a 32 bit." alt="" coords="190,5,334,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="142,16,174,16,174,21,142,21"/>
+</map>
