@@ -1,0 +1,15 @@
+<map id="emulazione_git.c" name="emulazione_git.c">
+<area shape="rect" id="Node000001" title="Source file per funzioni riguardanti i GIT." alt="" coords="149,5,268,32"/>
+<area shape="rect" id="Node000002" href="$emulazione__git_8h.html" title="Header file per funzioni riguardanti i GIT." alt="" coords="149,80,268,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="211,33,211,64,206,64,206,33"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,155,68,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="180,110,82,151,79,146,178,105"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="92,155,152,181"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="195,109,150,147,147,143,192,105"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="176,155,241,181"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="211,107,211,139,206,139,206,107"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="265,155,328,181"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="226,105,271,143,268,147,222,109"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="352,155,420,181"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="240,105,342,146,340,151,238,110"/>
+</map>

@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="it">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Firmware GITSIM:  File sorgente emulazione_git.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="output-onlinepngtools.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">Firmware GITSIM<span id="projectnumber">&#160;3.0</span>
+   </div>
+   <div id="projectbrief">WORK IN PROGRESS</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generato da Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Cerca');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('emulazione__git_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Caricamento in corso...</div>
+<div class="SRStatus" id="Searching">Ricerca in corso...</div>
+<div class="SRStatus" id="NoMatches">Nessun risultato</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">emulazione_git.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="emulazione__git_8h.html">Vai alla documentazione di questo file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">/* Define to prevent recursive inclusion ------------------------------------*/</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef PRG_EMU_GIT_H_</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define PRG_EMU_GIT_H_</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">/* Includes -----------------------------------------------------------------*/</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;xil_io.h&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;stdio.h&quot;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &quot;xgpio.h&quot;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &lt;assert.h&gt;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">/* Private define -----------------------------------------------------------*/</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="emulazione__git_8h.html#a5711cd8c640069d4222d24c7832b35d0">   25</a></span><span class="preprocessor">#define T_SAMPLE 0.000004                 </span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="emulazione__git_8h.html#a96ee7a4d2aee8a097cf25167be12018f">   28</a></span><span class="preprocessor">#define PI_GRECO 3.14159265358979323846   </span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="emulazione__git_8h.html#a271856af8b8b2cadea103f02bd5b668f">   30</a></span><span class="preprocessor">#define VELOCITA_MAX 700/3.6 </span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">/* Exported types -----------------------------------------------------------*/</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="emulazione__git_8h.html#a4611b605e45ab401f02cab15c5e38715">   35</a></span><span class="keyword">typedef</span>      <span class="keywordtype">float</span>  <a class="code hl_typedef" href="emulazione__git_8h.html#a4611b605e45ab401f02cab15c5e38715">float32_t</a>; </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="emulazione__git_8h.html#abf48e6de81b13463344ee4ebcf05d8b6">   38</a></span><span class="keyword">typedef</span> <span class="keywordtype">long</span>  <span class="keywordtype">double</span> <a class="code hl_typedef" href="emulazione__git_8h.html#abf48e6de81b13463344ee4ebcf05d8b6">float64_t</a>; </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">/* Check sul formato dei tipi di dato definiti, lancia errore se l&#39;architettura</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">   del target non supporta quelli definiti  */</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keyword">static_assert</span>(<span class="keyword">sizeof</span>(<a class="code hl_typedef" href="emulazione__git_8h.html#a4611b605e45ab401f02cab15c5e38715">float32_t</a>) * 8 == 32, <span class="stringliteral">&quot;Size of &#39;float32_t&#39; not 32&quot;</span>);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keyword">static_assert</span>(<span class="keyword">sizeof</span>(<a class="code hl_typedef" href="emulazione__git_8h.html#abf48e6de81b13463344ee4ebcf05d8b6">float64_t</a>) * 8  == 64, <span class="stringliteral">&quot;Size of &#39;float64_t&#39; not 64&quot;</span>);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="foldopen" id="foldopen00080" data-start="{" data-end="};">
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="struct_g_i_t.html">   80</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>{ </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="struct_g_i_t.html#a4d4cef7da5d96a727cdca73797719e71">   82</a></span>  uint16_t <a class="code hl_variable" href="struct_g_i_t.html#a4d4cef7da5d96a727cdca73797719e71">duty_A</a>;          </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="struct_g_i_t.html#ae0f78e46ade6acb432ec551990426095">   87</a></span>  uint16_t <a class="code hl_variable" href="struct_g_i_t.html#ae0f78e46ade6acb432ec551990426095">duty_B</a>;          </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="struct_g_i_t.html#af1445e4ed7cf1b67f7d17f922b38fd07">   92</a></span>  int16_t <a class="code hl_variable" href="struct_g_i_t.html#af1445e4ed7cf1b67f7d17f922b38fd07">fase</a>;           </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="struct_g_i_t.html#ad46d10088cc268fa531b4554e7254af9">   95</a></span>  uint16_t <a class="code hl_variable" href="struct_g_i_t.html#ad46d10088cc268fa531b4554e7254af9">ris</a>;            </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="struct_g_i_t.html#afaca97e4cf5f9370dfd6ab15bf63e936">   99</a></span>  <a class="code hl_typedef" href="emulazione__git_8h.html#a4611b605e45ab401f02cab15c5e38715">float32_t</a> <a class="code hl_variable" href="struct_g_i_t.html#afaca97e4cf5f9370dfd6ab15bf63e936">diam</a>;              </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="struct_g_i_t.html#a7cec6fecb6c7263fa9d184a53c7deb60">  102</a></span>  <a class="code hl_typedef" href="emulazione__git_8h.html#a4611b605e45ab401f02cab15c5e38715">float32_t</a> <a class="code hl_variable" href="struct_g_i_t.html#a7cec6fecb6c7263fa9d184a53c7deb60">passo</a>;             </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="struct_g_i_t.html#a1cf1e0360f68c7122c6207b45745698b">  109</a></span>  <a class="code hl_typedef" href="emulazione__git_8h.html#abf48e6de81b13463344ee4ebcf05d8b6">float64_t</a> <a class="code hl_variable" href="struct_g_i_t.html#a1cf1e0360f68c7122c6207b45745698b">pos_A</a>;       </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="struct_g_i_t.html#a2dbb046338c2c836482a2f763df5db60">  111</a></span>  <a class="code hl_typedef" href="emulazione__git_8h.html#abf48e6de81b13463344ee4ebcf05d8b6">float64_t</a> <a class="code hl_variable" href="struct_g_i_t.html#a2dbb046338c2c836482a2f763df5db60">pos_B</a>;       </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="struct_g_i_t.html#a16a82d81d1dcb64b7e97efa2086e5ae4">  114</a></span>  <a class="code hl_typedef" href="emulazione__git_8h.html#abf48e6de81b13463344ee4ebcf05d8b6">float64_t</a> <a class="code hl_variable" href="struct_g_i_t.html#a16a82d81d1dcb64b7e97efa2086e5ae4">vel</a>;         </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="struct_g_i_t.html#af0266c3c1b926b52ebf52b11b1fd85a7">  116</a></span>  <a class="code hl_typedef" href="emulazione__git_8h.html#abf48e6de81b13463344ee4ebcf05d8b6">float64_t</a> <a class="code hl_variable" href="struct_g_i_t.html#af0266c3c1b926b52ebf52b11b1fd85a7">acc</a>;         </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="struct_g_i_t.html#a4e0c7c15cf21d6934e955f1621e7a3d4">  118</a></span>  uint64_t <a class="code hl_variable" href="struct_g_i_t.html#a4e0c7c15cf21d6934e955f1621e7a3d4">n_passi</a>;        </div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>} <a class="code hl_struct" href="struct_g_i_t.html">GIT</a>;</div>
+</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="comment">/* Exported Functions Prototypes---------------------------------------------*/</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span><span class="keywordtype">void</span> <a class="code hl_function" href="emulazione__git_8h.html#ab0df4a05499a0d0ff2818a433f53e1a9">Inizializza_GIT</a>(<a class="code hl_struct" href="struct_g_i_t.html">GIT</a> *var_git);</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span><span class="keywordtype">void</span> <a class="code hl_function" href="emulazione__git_8h.html#a04a2dc794836e9ecb55f2ea9f1857cce">Aggiorna_spazio_e_vel</a>(<a class="code hl_struct" href="struct_g_i_t.html">GIT</a> *var_git);</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>uint8_t <a class="code hl_function" href="emulazione__git_8h.html#a2b152e22dd198c2e62bafb1c5562f12b">Emula_GIT_wGPIO</a>(<a class="code hl_struct" href="struct_g_i_t.html">GIT</a> *var_git, XGpio GPIO_CH_A, XGpio GPIO_CH_B);</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> </div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span><span class="comment">/* External variables -------------------------------------------------------*/</span></div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span> </div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span><span class="keyword">extern</span> <a class="code hl_struct" href="struct_g_i_t.html">GIT</a> <a class="code hl_variable" href="emulazione__git_8h.html#a96d75e2c9c47d6964da0ba685808f433">git1</a>; </div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span><span class="keyword">extern</span> <a class="code hl_struct" href="struct_g_i_t.html">GIT</a> <a class="code hl_variable" href="emulazione__git_8h.html#aab404a5e4b3e9c6e5d547cfd8c53db4a">git2</a>; </div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span><span class="preprocessor">#endif </span><span class="comment">/* PRG_EMU_GIT_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aemulazione__git_8h_html_a04a2dc794836e9ecb55f2ea9f1857cce"><div class="ttname"><a href="emulazione__git_8h.html#a04a2dc794836e9ecb55f2ea9f1857cce">Aggiorna_spazio_e_vel</a></div><div class="ttdeci">void Aggiorna_spazio_e_vel(GIT *var_git)</div><div class="ttdoc">La funzione aggiorna le principali variabili cinematiche del GIT.</div><div class="ttdef"><b>Definition</b> <a href="emulazione__git_8c_source.html#l00054">emulazione_git.c:54</a></div></div>
+<div class="ttc" id="aemulazione__git_8h_html_a2b152e22dd198c2e62bafb1c5562f12b"><div class="ttname"><a href="emulazione__git_8h.html#a2b152e22dd198c2e62bafb1c5562f12b">Emula_GIT_wGPIO</a></div><div class="ttdeci">uint8_t Emula_GIT_wGPIO(GIT *var_git, XGpio GPIO_CH_A, XGpio GPIO_CH_B)</div><div class="ttdoc">La funzione emula, sulle porte GPIO indicate, una variabile GIT sulla base dei suoi campi (stati)</div><div class="ttdef"><b>Definition</b> <a href="emulazione__git_8c_source.html#l00127">emulazione_git.c:127</a></div></div>
+<div class="ttc" id="aemulazione__git_8h_html_a4611b605e45ab401f02cab15c5e38715"><div class="ttname"><a href="emulazione__git_8h.html#a4611b605e45ab401f02cab15c5e38715">float32_t</a></div><div class="ttdeci">float float32_t</div><div class="ttdef"><b>Definition</b> <a href="#l00035">emulazione_git.h:35</a></div></div>
+<div class="ttc" id="aemulazione__git_8h_html_a96d75e2c9c47d6964da0ba685808f433"><div class="ttname"><a href="emulazione__git_8h.html#a96d75e2c9c47d6964da0ba685808f433">git1</a></div><div class="ttdeci">GIT git1</div><div class="ttdef"><b>Definition</b> <a href="gestione__periferiche_8c_source.html#l00042">gestione_periferiche.c:42</a></div></div>
+<div class="ttc" id="aemulazione__git_8h_html_aab404a5e4b3e9c6e5d547cfd8c53db4a"><div class="ttname"><a href="emulazione__git_8h.html#aab404a5e4b3e9c6e5d547cfd8c53db4a">git2</a></div><div class="ttdeci">GIT git2</div><div class="ttdef"><b>Definition</b> <a href="gestione__periferiche_8c_source.html#l00042">gestione_periferiche.c:42</a></div></div>
+<div class="ttc" id="aemulazione__git_8h_html_ab0df4a05499a0d0ff2818a433f53e1a9"><div class="ttname"><a href="emulazione__git_8h.html#ab0df4a05499a0d0ff2818a433f53e1a9">Inizializza_GIT</a></div><div class="ttdeci">void Inizializza_GIT(GIT *var_git)</div><div class="ttdoc">La funzione inizializza tutti i campi di una struttura GIT.</div><div class="ttdef"><b>Definition</b> <a href="emulazione__git_8c_source.html#l00021">emulazione_git.c:21</a></div></div>
+<div class="ttc" id="aemulazione__git_8h_html_abf48e6de81b13463344ee4ebcf05d8b6"><div class="ttname"><a href="emulazione__git_8h.html#abf48e6de81b13463344ee4ebcf05d8b6">float64_t</a></div><div class="ttdeci">long double float64_t</div><div class="ttdef"><b>Definition</b> <a href="#l00038">emulazione_git.h:38</a></div></div>
+<div class="ttc" id="astruct_g_i_t_html"><div class="ttname"><a href="struct_g_i_t.html">GIT</a></div><div class="ttdoc">Struttura contenente le proprietà fisiche (e non) di un GIT, in maniera da identificare univocamente ...</div><div class="ttdef"><b>Definition</b> <a href="#l00080">emulazione_git.h:81</a></div></div>
+<div class="ttc" id="astruct_g_i_t_html_a16a82d81d1dcb64b7e97efa2086e5ae4"><div class="ttname"><a href="struct_g_i_t.html#a16a82d81d1dcb64b7e97efa2086e5ae4">GIT::vel</a></div><div class="ttdeci">float64_t vel</div><div class="ttdef"><b>Definition</b> <a href="#l00114">emulazione_git.h:114</a></div></div>
+<div class="ttc" id="astruct_g_i_t_html_a1cf1e0360f68c7122c6207b45745698b"><div class="ttname"><a href="struct_g_i_t.html#a1cf1e0360f68c7122c6207b45745698b">GIT::pos_A</a></div><div class="ttdeci">float64_t pos_A</div><div class="ttdef"><b>Definition</b> <a href="#l00109">emulazione_git.h:109</a></div></div>
+<div class="ttc" id="astruct_g_i_t_html_a2dbb046338c2c836482a2f763df5db60"><div class="ttname"><a href="struct_g_i_t.html#a2dbb046338c2c836482a2f763df5db60">GIT::pos_B</a></div><div class="ttdeci">float64_t pos_B</div><div class="ttdef"><b>Definition</b> <a href="#l00111">emulazione_git.h:111</a></div></div>
+<div class="ttc" id="astruct_g_i_t_html_a4d4cef7da5d96a727cdca73797719e71"><div class="ttname"><a href="struct_g_i_t.html#a4d4cef7da5d96a727cdca73797719e71">GIT::duty_A</a></div><div class="ttdeci">uint16_t duty_A</div><div class="ttdef"><b>Definition</b> <a href="#l00082">emulazione_git.h:82</a></div></div>
+<div class="ttc" id="astruct_g_i_t_html_a4e0c7c15cf21d6934e955f1621e7a3d4"><div class="ttname"><a href="struct_g_i_t.html#a4e0c7c15cf21d6934e955f1621e7a3d4">GIT::n_passi</a></div><div class="ttdeci">uint64_t n_passi</div><div class="ttdef"><b>Definition</b> <a href="#l00118">emulazione_git.h:118</a></div></div>
+<div class="ttc" id="astruct_g_i_t_html_a7cec6fecb6c7263fa9d184a53c7deb60"><div class="ttname"><a href="struct_g_i_t.html#a7cec6fecb6c7263fa9d184a53c7deb60">GIT::passo</a></div><div class="ttdeci">float32_t passo</div><div class="ttdef"><b>Definition</b> <a href="#l00102">emulazione_git.h:102</a></div></div>
+<div class="ttc" id="astruct_g_i_t_html_ad46d10088cc268fa531b4554e7254af9"><div class="ttname"><a href="struct_g_i_t.html#ad46d10088cc268fa531b4554e7254af9">GIT::ris</a></div><div class="ttdeci">uint16_t ris</div><div class="ttdef"><b>Definition</b> <a href="#l00095">emulazione_git.h:95</a></div></div>
+<div class="ttc" id="astruct_g_i_t_html_ae0f78e46ade6acb432ec551990426095"><div class="ttname"><a href="struct_g_i_t.html#ae0f78e46ade6acb432ec551990426095">GIT::duty_B</a></div><div class="ttdeci">uint16_t duty_B</div><div class="ttdef"><b>Definition</b> <a href="#l00087">emulazione_git.h:87</a></div></div>
+<div class="ttc" id="astruct_g_i_t_html_af0266c3c1b926b52ebf52b11b1fd85a7"><div class="ttname"><a href="struct_g_i_t.html#af0266c3c1b926b52ebf52b11b1fd85a7">GIT::acc</a></div><div class="ttdeci">float64_t acc</div><div class="ttdef"><b>Definition</b> <a href="#l00116">emulazione_git.h:116</a></div></div>
+<div class="ttc" id="astruct_g_i_t_html_af1445e4ed7cf1b67f7d17f922b38fd07"><div class="ttname"><a href="struct_g_i_t.html#af1445e4ed7cf1b67f7d17f922b38fd07">GIT::fase</a></div><div class="ttdeci">int16_t fase</div><div class="ttdef"><b>Definition</b> <a href="#l00092">emulazione_git.h:92</a></div></div>
+<div class="ttc" id="astruct_g_i_t_html_afaca97e4cf5f9370dfd6ab15bf63e936"><div class="ttname"><a href="struct_g_i_t.html#afaca97e4cf5f9370dfd6ab15bf63e936">GIT::diam</a></div><div class="ttdeci">float32_t diam</div><div class="ttdef"><b>Definition</b> <a href="#l00099">emulazione_git.h:99</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="emulazione__git_8h.html">emulazione_git.h</a></li>
+    <li class="footer">Generato da <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

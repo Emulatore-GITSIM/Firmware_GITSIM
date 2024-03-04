@@ -1,0 +1,5 @@
+<map id="Conversione_str_float" name="Conversione_str_float">
+<area shape="rect" id="Node000001" title="La funzione prende in ingresso una stringa e la converte in un formato float a 32 bit." alt="" coords="190,5,334,32"/>
+<area shape="rect" id="Node000002" href="$gestione__comunicazione_8c.html#a618c55147f9a173bd8c6ffc6dbbe07ca" title="La funzione prende in ingresso un puntatore a fifo, riempendo una cella di esso con un dato ricevuto ..." alt="" coords="5,5,142,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="174,21,142,21,142,16,174,16"/>
+</map>

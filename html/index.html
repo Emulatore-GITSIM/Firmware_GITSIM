@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="it">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Firmware GITSIM: Metodi e algoritmi</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="output-onlinepngtools.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">Firmware GITSIM<span id="projectnumber">&#160;3.0</span>
+   </div>
+   <div id="projectbrief">WORK IN PROGRESS</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generato da Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Cerca');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('index.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Caricamento in corso...</div>
+<div class="SRStatus" id="Searching">Ricerca in corso...</div>
+<div class="SRStatus" id="NoMatches">Nessun risultato</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">Metodi e algoritmi </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="mainpage"></a></p>
+<h1><a class="anchor" id="autotoc_md0"></a>
+Introduzione</h1>
+<p>Questa documentazione tecnica si riferisce al firmware utilizzato per le funzionalità del sistema di emulazione GITSIM. Il sistema ha come scopo principale l'emulare un sensore <b><a class="el" href="struct_g_i_t.html" title="Struttura contenente le proprietà fisiche (e non) di un GIT, in maniera da identificare univocamente ...">GIT</a></b> (Generatore di Impulsi Tachimetrici), che sono i sensori attualmente impiegati da Trenitalia come soluzione per il rilevamento dello spazio percorso dai rotabili nel territorio italiano.</p>
+<p>Il sistema si pone come obiettivi di:</p>
+<ul>
+<li>emulare tramite un algoritmo, un <a class="el" href="struct_g_i_t.html" title="Struttura contenente le proprietà fisiche (e non) di un GIT, in maniera da identificare univocamente ...">GIT</a> in condizioni statiche (velocità nulla), cinetostatiche (velocità costante) e dinamiche (accelerazione non nulla) in maniera coerente con le condizioni fisiche;</li>
+<li>emulare il comportamento per due assi di treno (e quindi due <a class="el" href="struct_g_i_t.html" title="Struttura contenente le proprietà fisiche (e non) di un GIT, in maniera da identificare univocamente ...">GIT</a>), in maniera indipendente;</li>
+<li>emulare non idealità sulle forme d'onda in uscita dal sensore, per esempio sullo sfasamento dei canali del sensore;</li>
+<li>poter cambiare alcune costati definite nell'ambiente di test, per esempio la risoluzione del <a class="el" href="struct_g_i_t.html" title="Struttura contenente le proprietà fisiche (e non) di un GIT, in maniera da identificare univocamente ...">GIT</a>;</li>
+<li>emulare traiettorie di velocità e di accelerazione "realisticamente";</li>
+<li>il punto sopracitato evince la necessità di avere degli input continui da un utente, quindi la creazione di un'apposita GUI e di un idoneo protocollo di comunicazione con esso.</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md1"></a>
+Composizione</h1>
+<p>Il sistema <em>GITSIM</em> è formato da due parti distinte è ben identificabili:</p><ul>
+<li>l'hardware, cioè la scheda in cui l'algoritmo di emulazione è stato implementato;</li>
+<li>il software, cioè la GUI con cui si trasmettono i dati da far emulare alla scheda.</li>
+</ul>
+<p>Questa documentazione si prefigge di descrivere <b>solo</b> gli algoritmi e le strategie implementative sull'hardware (e quindi il firmware), mentre il software sarà oggetto di una successiva documentazione.</p>
+<p>La scheda in cui gli algoritmi sono stati implementati è la <a href="https://www.avnet.com/wps/portal/us/products/avnet-boards/avnet-board-families/minized/"><em>Minized</em></a> dell'azienda AVNET, che possiede al suo interno una SoC <a href="https://www.xilinx.com/products/silicon-devices/soc/zynq-7000.html">ZYNQ 7007</a> (microprocessore + FPGA). <em>Nota: il codice è stato scritto in C.</em></p>
+<p>Poichè si ha la necessità di interfacciarsi con la GUI su computer e di emulare due <a class="el" href="struct_g_i_t.html" title="Struttura contenente le proprietà fisiche (e non) di un GIT, in maniera da identificare univocamente ...">GIT</a> (e quindi 4 output, 2 canali per <a class="el" href="struct_g_i_t.html" title="Struttura contenente le proprietà fisiche (e non) di un GIT, in maniera da identificare univocamente ...">GIT</a>), allora:</p>
+<ul>
+<li>si utilizza la porta <b>USB type A</b> per la trasmissione dati;</li>
+<li>si utilizzano 4 GPIO per l'emulazione dei <a class="el" href="struct_g_i_t.html" title="Struttura contenente le proprietà fisiche (e non) di un GIT, in maniera da identificare univocamente ...">GIT</a>.</li>
+</ul>
+<p>Sotto è riportato uno schema di massima del sistema:</p>
+<p><img src="https://i.ibb.co/P1P3XSn/Untitled-Diagram.png" alt="Untitled-Diagram" border="0" class="inline"/> </p>
+</div></div><!-- PageDoc -->
+<a href="doxygen_crawl.html"/>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generato da <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

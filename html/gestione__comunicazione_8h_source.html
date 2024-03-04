@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="it">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Firmware GITSIM:  File sorgente gestione_comunicazione.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="output-onlinepngtools.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">Firmware GITSIM<span id="projectnumber">&#160;3.0</span>
+   </div>
+   <div id="projectbrief">WORK IN PROGRESS</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generato da Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Cerca');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('gestione__comunicazione_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Caricamento in corso...</div>
+<div class="SRStatus" id="Searching">Ricerca in corso...</div>
+<div class="SRStatus" id="NoMatches">Nessun risultato</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">gestione_comunicazione.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="gestione__comunicazione_8h.html">Vai alla documentazione di questo file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">/* Define to prevent recursive inclusion ------------------------------------*/</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#ifndef PRG_GESTIONE_UART_H_</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#define PRG_GESTIONE_UART_H_</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">/* Includes -----------------------------------------------------------------*/</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;xil_printf.h&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;xparameters.h&quot;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;xusbps.h&quot;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &lt;inttypes.h&gt;</span> <span class="comment">/* usato per stampare uint64_t */</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &quot;<a class="code" href="emulazione__git_8h.html">emulazione_git.h</a>&quot;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">/* Private define -----------------------------------------------------------*/</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="gestione__comunicazione_8h.html#afd611e0d6cab6c6a81128dc22ee27f56">   23</a></span><span class="preprocessor">#define INDIRIZZO_USB XPAR_XUSBPS_0_BASEADDR  </span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="gestione__comunicazione_8h.html#affeb8674cbc48331be5c4bd5012d8135">   27</a></span><span class="preprocessor">#define LUNGHEZZA_BUFFER 10000 </span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">/* Exported types -----------------------------------------------------------*/</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="foldopen" id="foldopen00048" data-start="{" data-end="};">
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="structfifo.html">   48</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>{</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="structfifo.html#a9e29cea6f7c6efe00dcf87a46f781b3f">   50</a></span>    <a class="code hl_typedef" href="emulazione__git_8h.html#abf48e6de81b13463344ee4ebcf05d8b6">float64_t</a> dato_1[<a class="code hl_define" href="gestione__comunicazione_8h.html#affeb8674cbc48331be5c4bd5012d8135">LUNGHEZZA_BUFFER</a>]; </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="structfifo.html#acf34701f1f92338252f754b6210d8fc2">   53</a></span>    <a class="code hl_typedef" href="emulazione__git_8h.html#abf48e6de81b13463344ee4ebcf05d8b6">float64_t</a> dato_2[<a class="code hl_define" href="gestione__comunicazione_8h.html#affeb8674cbc48331be5c4bd5012d8135">LUNGHEZZA_BUFFER</a>]; </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="structfifo.html#a313d61b8c2152114ccb3ee793738719a">   56</a></span>    uint8_t  char_terminatore[<a class="code hl_define" href="gestione__comunicazione_8h.html#affeb8674cbc48331be5c4bd5012d8135">LUNGHEZZA_BUFFER</a>]; </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="structfifo.html#a4e5501e7d30fe517c61c680952b18786">   62</a></span>    uint32_t <a class="code hl_variable" href="structfifo.html#a4e5501e7d30fe517c61c680952b18786">index_wr</a>;  </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="structfifo.html#aa126037c0647310abbc1eff922bcd5ed">   66</a></span>    uint32_t <a class="code hl_variable" href="structfifo.html#aa126037c0647310abbc1eff922bcd5ed">index_rd</a>;  </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="structfifo.html#aebcde657f06ecb5c1e8148929596540e">   70</a></span>    uint64_t <a class="code hl_variable" href="structfifo.html#aebcde657f06ecb5c1e8148929596540e">n_valori_da_leggere</a>;   </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="structfifo.html#a3e37105c8ab00833b17356e59e8f67a5">   73</a></span>    uint64_t <a class="code hl_variable" href="structfifo.html#a3e37105c8ab00833b17356e59e8f67a5">n_valori_attesi</a>;   </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="structfifo.html#a4b5ed6509cd2c8f4ca79966a68c6df66">   77</a></span>    <span class="keywordtype">char</span> <a class="code hl_variable" href="structfifo.html#a4b5ed6509cd2c8f4ca79966a68c6df66">flag_collegamento</a>; </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>}<a class="code hl_struct" href="structfifo.html">fifo</a>;</div>
+</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment">/* External variables -------------------------------------------------------*/</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="keyword">extern</span> <a class="code hl_struct" href="structfifo.html">fifo</a> <a class="code hl_variable" href="gestione__comunicazione_8h.html#a550913ed2f7b6e0f47b5a9db0f994156">fifo_telegrammi</a>;    </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment">/* Private function prototypes ----------------------------------------------*/</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="gestione__comunicazione_8h.html#a555c248a1abafc251b98213bb63d0cf9">  111</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="gestione__comunicazione_8h.html#a555c248a1abafc251b98213bb63d0cf9">Inizializza_Fifo</a>(<a class="code hl_struct" href="structfifo.html">fifo</a> *var_fifo);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="keywordtype">void</span> <a class="code hl_function" href="gestione__comunicazione_8h.html#a93c5f83f2b218f36b9948b78d5579cc6">Inizializza_istanza_COM</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span><a class="code hl_typedef" href="emulazione__git_8h.html#abf48e6de81b13463344ee4ebcf05d8b6">float64_t</a> <a class="code hl_function" href="gestione__comunicazione_8h.html#ab1fad6242e5cdf0e08d781f8ed62d9c7">Conversione_str_float</a>(<span class="keywordtype">char</span> *var_stringa);</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span><span class="keywordtype">void</span> <a class="code hl_function" href="gestione__comunicazione_8h.html#a93c5f83f2b218f36b9948b78d5579cc6">Inizializza_istanza_COM</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span> </div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span><span class="keywordtype">void</span> <a class="code hl_function" href="gestione__comunicazione_8h.html#a618c55147f9a173bd8c6ffc6dbbe07ca">Lettura_telegramma</a>(<a class="code hl_struct" href="structfifo.html">fifo</a> *var_fifo);</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span> </div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span> </div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>uint8_t Check_terminatore(<span class="keywordtype">char</span> var_char);</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span><span class="keywordtype">void</span> Gestione_comunicazione(<a class="code hl_struct" href="structfifo.html">fifo</a> *var_fifo);</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span><span class="keywordtype">void</span> Aggiornamento_variabili(<a class="code hl_struct" href="structfifo.html">fifo</a> *var_fifo, <a class="code hl_struct" href="struct_g_i_t.html">GIT</a> *var_git1, <a class="code hl_struct" href="struct_g_i_t.html">GIT</a> *var_git2);</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span> </div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span> </div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span> </div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span> </div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span><span class="preprocessor">#endif </span><span class="comment">/* PRG_GESTIONE_UART_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aemulazione__git_8h_html"><div class="ttname"><a href="emulazione__git_8h.html">emulazione_git.h</a></div><div class="ttdoc">Header file per funzioni riguardanti i GIT.</div></div>
+<div class="ttc" id="aemulazione__git_8h_html_abf48e6de81b13463344ee4ebcf05d8b6"><div class="ttname"><a href="emulazione__git_8h.html#abf48e6de81b13463344ee4ebcf05d8b6">float64_t</a></div><div class="ttdeci">long double float64_t</div><div class="ttdef"><b>Definition</b> <a href="emulazione__git_8h_source.html#l00038">emulazione_git.h:38</a></div></div>
+<div class="ttc" id="agestione__comunicazione_8h_html_a550913ed2f7b6e0f47b5a9db0f994156"><div class="ttname"><a href="gestione__comunicazione_8h.html#a550913ed2f7b6e0f47b5a9db0f994156">fifo_telegrammi</a></div><div class="ttdeci">fifo fifo_telegrammi</div><div class="ttdef"><b>Definition</b> <a href="gestione__periferiche_8c_source.html#l00044">gestione_periferiche.c:44</a></div></div>
+<div class="ttc" id="agestione__comunicazione_8h_html_a555c248a1abafc251b98213bb63d0cf9"><div class="ttname"><a href="gestione__comunicazione_8h.html#a555c248a1abafc251b98213bb63d0cf9">Inizializza_Fifo</a></div><div class="ttdeci">void Inizializza_Fifo(fifo *var_fifo)</div><div class="ttdoc">Inizializza alcuni campi della fifo a cui si sta puntando.</div></div>
+<div class="ttc" id="agestione__comunicazione_8h_html_a618c55147f9a173bd8c6ffc6dbbe07ca"><div class="ttname"><a href="gestione__comunicazione_8h.html#a618c55147f9a173bd8c6ffc6dbbe07ca">Lettura_telegramma</a></div><div class="ttdeci">void Lettura_telegramma(fifo *var_fifo)</div><div class="ttdoc">La funzione prende in ingresso un puntatore a fifo, riempendo una cella di esso con un dato ricevuto ...</div><div class="ttdef"><b>Definition</b> <a href="gestione__comunicazione_8c_source.html#l00077">gestione_comunicazione.c:77</a></div></div>
+<div class="ttc" id="agestione__comunicazione_8h_html_a93c5f83f2b218f36b9948b78d5579cc6"><div class="ttname"><a href="gestione__comunicazione_8h.html#a93c5f83f2b218f36b9948b78d5579cc6">Inizializza_istanza_COM</a></div><div class="ttdeci">void Inizializza_istanza_COM(void)</div><div class="ttdoc">Inizializza l'istanza USB.</div><div class="ttdef"><b>Definition</b> <a href="gestione__comunicazione_8c_source.html#l00045">gestione_comunicazione.c:45</a></div></div>
+<div class="ttc" id="agestione__comunicazione_8h_html_ab1fad6242e5cdf0e08d781f8ed62d9c7"><div class="ttname"><a href="gestione__comunicazione_8h.html#ab1fad6242e5cdf0e08d781f8ed62d9c7">Conversione_str_float</a></div><div class="ttdeci">float64_t Conversione_str_float(char *var_stringa)</div><div class="ttdoc">La funzione prende in ingresso una stringa e la converte in un formato float a 32 bit.</div><div class="ttdef"><b>Definition</b> <a href="gestione__comunicazione_8c_source.html#l00174">gestione_comunicazione.c:174</a></div></div>
+<div class="ttc" id="agestione__comunicazione_8h_html_affeb8674cbc48331be5c4bd5012d8135"><div class="ttname"><a href="gestione__comunicazione_8h.html#affeb8674cbc48331be5c4bd5012d8135">LUNGHEZZA_BUFFER</a></div><div class="ttdeci">#define LUNGHEZZA_BUFFER</div><div class="ttdef"><b>Definition</b> <a href="#l00027">gestione_comunicazione.h:27</a></div></div>
+<div class="ttc" id="astruct_g_i_t_html"><div class="ttname"><a href="struct_g_i_t.html">GIT</a></div><div class="ttdoc">Struttura contenente le proprietà fisiche (e non) di un GIT, in maniera da identificare univocamente ...</div><div class="ttdef"><b>Definition</b> <a href="emulazione__git_8h_source.html#l00080">emulazione_git.h:81</a></div></div>
+<div class="ttc" id="astructfifo_html"><div class="ttname"><a href="structfifo.html">fifo</a></div><div class="ttdoc">La struttura è una memoria fifo che immagazzina i telegrammi ricevuti dalla GUI gitsim.</div><div class="ttdef"><b>Definition</b> <a href="#l00048">gestione_comunicazione.h:49</a></div></div>
+<div class="ttc" id="astructfifo_html_a3e37105c8ab00833b17356e59e8f67a5"><div class="ttname"><a href="structfifo.html#a3e37105c8ab00833b17356e59e8f67a5">fifo::n_valori_attesi</a></div><div class="ttdeci">uint64_t n_valori_attesi</div><div class="ttdef"><b>Definition</b> <a href="#l00073">gestione_comunicazione.h:73</a></div></div>
+<div class="ttc" id="astructfifo_html_a4b5ed6509cd2c8f4ca79966a68c6df66"><div class="ttname"><a href="structfifo.html#a4b5ed6509cd2c8f4ca79966a68c6df66">fifo::flag_collegamento</a></div><div class="ttdeci">char flag_collegamento</div><div class="ttdef"><b>Definition</b> <a href="#l00077">gestione_comunicazione.h:77</a></div></div>
+<div class="ttc" id="astructfifo_html_a4e5501e7d30fe517c61c680952b18786"><div class="ttname"><a href="structfifo.html#a4e5501e7d30fe517c61c680952b18786">fifo::index_wr</a></div><div class="ttdeci">uint32_t index_wr</div><div class="ttdef"><b>Definition</b> <a href="#l00062">gestione_comunicazione.h:62</a></div></div>
+<div class="ttc" id="astructfifo_html_aa126037c0647310abbc1eff922bcd5ed"><div class="ttname"><a href="structfifo.html#aa126037c0647310abbc1eff922bcd5ed">fifo::index_rd</a></div><div class="ttdeci">uint32_t index_rd</div><div class="ttdef"><b>Definition</b> <a href="#l00066">gestione_comunicazione.h:66</a></div></div>
+<div class="ttc" id="astructfifo_html_aebcde657f06ecb5c1e8148929596540e"><div class="ttname"><a href="structfifo.html#aebcde657f06ecb5c1e8148929596540e">fifo::n_valori_da_leggere</a></div><div class="ttdeci">uint64_t n_valori_da_leggere</div><div class="ttdef"><b>Definition</b> <a href="#l00070">gestione_comunicazione.h:70</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="gestione__comunicazione_8h.html">gestione_comunicazione.h</a></li>
+    <li class="footer">Generato da <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>
